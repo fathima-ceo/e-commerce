@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VXMART-Shopping App</title>
+    <link
+     rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Add this before </body> -->
+<div id="loginModal" style="display:none; position:fixed; top:20%; left:50%; transform:translateX(-50%); background:#fff; padding:2rem; border-radius:10px; box-shadow:0 0 10px #333;">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username" style="display:block; margin-bottom:1rem;">
+    <input type="password" placeholder="Password" style="display:block; margin-bottom:1rem;">
+    <button onclick="hideLogin()">Close</button>
+</div>
+<script>
+function showLogin() {
+    document.getElementById('loginModal').style.display = 'block';
+}
+function hideLogin() {
+    document.getElementById('loginModal').style.display = 'none';
+}
+</script>
+    <header class="header">
+        <h1>VX-CART</h1>
+        <div class="header-buttons">
+            <button class="header-btn" title="Cart">
+                <i class="fas fa-shopping-cart">Cart</i>
+
+            </button>
+            <button class="header-btn" title=""Settings>
+                <i class="fas fa-cog">Setting</i>
+
+            </button>
+            <button class="header-btn" title="Account"onclick="showLogin()" >
+                <i class="fas fa-soild fa-user">Account</i>
+                </button>
+        <!-- </div>
+        <div id="loginModal" style="display:none; position:fixed; top:20%; left:50%; transform:translateX(-50%); background:#fff; padding:2rem; border-radius:10px; box-shadow:0 0 10px #333;">
+    <h2>Login</h2>
+    <form>
+        <input type="email" placeholder="Email Address" style="display:block; margin-bottom:1rem;" required>
+        <input type="password" placeholder="Password" style="display:block; margin-bottom:1rem;" required>
+        <button type="submit" style="margin-right:1rem;">Login</button>
+        <button type="button" onclick="hideLogin()">Close</button>
+    </form> -->
+</div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product">products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+        <section class="product-list" id="products">
+            <h2>products</h2>
+            <div class="product-container">
+                
+                <div class="product-card">
+                    <img src="https://i.pinimg.com/736x/cb/42/14/cb4214a5797336f5b4844ddda0c039c3--gaming-headphones-gaming-headset.jpg" alt=""/>
+                    <h3> Headphone</h3>
+                        
+                
+                    <p>&#8377; 8999</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501045_sd.jpg" alt=""/>
+                    <h3>Airpods</h3>
+                    <p>&#8377; 899</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://ortizan.com/wp-content/uploads/2022/06/71W9bhREdoL._AC_SL1500_.jpg" alt=""/>
+                    <h3>Speaker</h3>
+                    <p>&#8377; 1999</p>
+
+                    </div>
+                    <div class="product-card">
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.eEoNmThcv4-LYW-LDctGMQHaEK?pid=Api&P=0&h=180" alt=""/>
+                    <h3>hometheatersys</h3>
+                    <p>&#8377; 15999</p>
+
+                    </div>
+                     <div class="product-card">
+                        <img src="https://cdn.beebom.com/mobile/samsung-galaxy-s25-ultra-front-and-back-1.png" alt=""/>
+                    <h3>Galaxy
+                        samsung-galaxy-s25-ultra
+                    </h3>
+                    <p>&#8377; 1,70,000</p>
+
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/610LLQC8DhL._AC_SL1500_.jpg" alt=""/>
+                    <h3>samrt watch</h3>
+                    <p>&#8377; 1999</p>
+
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/61yteyH7tdL._AC_SL1500_.jpg" alt=""/>
+                    <h3>power 
+                        Bank
+                    </h3>
+                    <p>&#8377; 2999</p>
+
+                    </div>
+                    <div class="product-card">
+                        <img src="http://ringke.co.in/cdn/shop/files/71ZtHgms65L._SL1500.jpg?v=1705574378" alt=""/>
+                    <h3>Mobile case cover</h3>
+                    <p>&#8377; 599</p>
+
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images-na.ssl-images-amazon.com/images/G/02/aplusautomation/vendorimages/0b925aaf-0920-4019-a78e-dbe23cc1d1fa.jpg._CB536181688_.jpg" alt=""/>
+                    <h3>HP Laptop</h3>
+                    <p>&#8377; 45,000</p>
+
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.news18.com/ibnlive/uploads/2022/09/lenovo-m10-plus-166445365516x9.jpg" alt=""/>
+                    <h3>Lenovo M10 Plus 
+                        3rd Gen Android Tablet</h3>
+                    <p>&#8377; 21999</p>
+
+                    </div>
+                    <div class="product-card">
+                        <img src="http://designwanted.com/wp-content/uploads/2022/12/Massdrop-x-MITo-Unique-keyboard-concepts.jpg" alt=""/>
+                    <h3>keyboard </h3>
+                    <p>&#8377; 999</p>
+
+                    </div>
+                    <div class="product-card">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.A3X-DUhH1kCEaiWmdHyOGgHaFd?pid=Api&P=0&h=180" alt=""/>
+                    <h3>Wireless
+                        Mouse
+                    </h3>
+                    <p>&#8377; 499</p>
+
+                    </div>
+                    <div class="product-card">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.KVJh5c8cr8odhwfgpbcqCgHaFj?pid=Api&P=0&h=180" alt=""/>
+                    <h3>DSLR camera</h3>
+                    <p>&#8377; 8999</p>
+
+                    </div>
+                    <div class="product-card">
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.ViMGsq2zPZGslfaURsZ_jAHaHa?pid=Api&P=0&h=180" alt=""/>
+                    <h3>Action camera</h3>
+                    <p>&#8377; 7999</p>
+
+                    </div>
+                    <div class="product-card">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.GD8kPWesl38mX6dimABy6AHaHa?pid=Api&P=0&h=180" alt=""/>
+                    <h3>Tripods&Stand</h3>
+                    <p>&#8377; 799</p>
+
+                    </div>
+                    <div class="product-card">
+                        <img src="https://cf.creatrip.com/original/blog/7957/6qh4hpi2tsk4i32ees09p3ciba04wyzs.png" alt=""/>
+                    <h3>korean camera</h3>
+                    <p>&#8377; 999</p>
+
+                    </div>
+                    <div class="product-card">
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.N2-Tqelnz4XR4MXf7T3ccQHaGs?pid=Api&P=0&h=180" alt=""/>
+                    <h3>sumsung smart tv</h3>
+                    <p>&#8377; 39,999</p>
+
+                    </div>
+                    <div class="product-card">
+                        <img src="https://cdn.fcglcdn.com/brainbees/images/products/583x720/18929259a.webp" alt=""/>
+                    <h3>NEGOCIO Projector Night Light</h3>
+                    <p>&#8377; 872</p>
+
+                    </div>
+                    <div class="product-card">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.cjt47fsX53Le9l30EH0X7AHaHa?pid=Api&P=0&h=180" alt=""/>
+                    <h3>Mini tracking device </h3>
+                    <p>&#8377; 299</p>
+
+                    </div>
+
+
+                </div>
+
+            
+        </section>
+        <section class="about-section" id="about">
+            <h2>About us</h2>
+            <p>
+                <p>
+    FasoTechx is an innovative shopping app designed to make your online shopping easy, secure, and enjoyable. We offer a wide selection of products, competitive prices, and reliable customer support. Our goal is to provide a convenient platform where you can discover new items, find great deals, and shop with confidence. Thank you for choosing FasoTechx for your
+            </p>
+
+        </section>
+        <section class="contact-section" id="contact">
+            <h2>Contact us</h2>
+            <form action="" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+                </form>
+                
+            
+
+
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025
+             FasoTechx. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p>Follow us on:
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+<!-- Add this before </body> -->
+<!-- <div id="loginModal" style="display:none; position:fixed; top:20%; left:50%; transform:translateX(-50%); background:#fff; padding:2rem; border-radius:10px; box-shadow:0 0 10px #333;">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username" style="display:block; margin-bottom:1rem;">
+    <input type="password" placeholder="Password" style="display:block; margin-bottom:1rem;">
+    <button onclick="hideLogin()">Close</button>
+</div>
+<script>
+function showLogin() {
+    document.getElementById('loginModal').style.display = 'block';
+}
+function hideLogin() {
+    document.getElementById('loginModal').style.display = 'none';
+}
+</script> -->
+
+
+
+    
+</body>
+</html>
